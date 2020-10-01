@@ -1,23 +1,20 @@
 #include <iostream>
 using namespace std;
-
+int fib(int x) {
+   if((x==1)||(x==0)) {
+      return(x);
+   }else {
+      return(fib(x-1)+fib(x-2));
+   }
+}
 int main() {
-    cout << "This program will print " \
-         << " the fibonacci sequence." << endl;
-
-
-
-    cout << "Number of terms :";
-    long long numT = 5;
-    cin >> numT;
-
-    long long num1 = 0, num2= 1, num3 = 0;
-
-    for (int i = 0;i < numT; i++)
-    {
-        num3 = num1 + num2;
-        cout << num3 << endl;
-        num1 = num2;
-        num2 = num3;
-    }
+   int x , i=0;
+   cout << "Enter the number of terms of series : ";
+   cin >> x;
+   cout << "\nFibonnaci Series : ";
+   while(i < x) {
+      cout << " " << fib(i);
+      i++;
+   }
+   return 0;
 }
