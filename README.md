@@ -1,2 +1,2 @@
 # Basic-C-Programs
-Basic C++ Projects for Beginners!
+These are extrememly basic programs, white learning C++.
